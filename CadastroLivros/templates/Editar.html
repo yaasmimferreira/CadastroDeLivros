@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>{{ Titulo }}</title>
+</head>
+<body>
+
+<div class="livro-card">
+    <div class="page-header">
+        <h1 class="titulo">{{ Titulo }}</h1>
+    </div>
+    <form class="form" action="/alterar" method="post">
+        <fieldset>
+            <div class="form-group">
+                <label for="ID-Livros"></label>
+                <input type="hidden" name="ID-Livros" id="ID-Livros" value={{ livro.idlivro }}  required>
+            </div>
+            <div class="form-group">
+                <label for="Titulo">Titulo da História: </label>
+                <input type="text" name="Titulo" id="Titulo" value={{ livro.titulo }} required>
+            </div>
+            <div class="form-group">
+                <label for="Autor">Autor: </label>
+                <input type="text" name="Autor" id="Autor" value={{ livro.autor }} required>
+            </div>
+            <div class="form-group">
+                <label for="Ano">Ano de publicação: </label>
+                <input type="number" name="Ano" id="Ano" value={{ livro.ano }} required>
+            </div>
+            <div class="form-group">
+                <label for="Genero">Genêro: </label>
+                <select name="Genero" id="Genero" required>
+                        <option value="" selected>Selecione um gênero:</option>
+                        <option value="Fábula">Fábula</option>
+                        <option value="Conto de Fadas">Conto de Fadas</option>
+                        <option value="Lenda">Lenda</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Educativo">Educativo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Faixa">Faixa Etária: </label>
+                <select name="Faixa" id="Faixa" required>
+                        <option value="" selected>Selecione a Faixa Etária: </option>
+                        <option value="0-4 anos">0-4 anos</option>
+                        <option value="5-8 anos">5-8 anos</option>
+                        <option value="9-12 anos">9-12 anos</option>
+                        <option value="Todas as idades">Todas as idades</option>
+                </select>
+            </div>
+            <button type="submit" class="botao">Enviar</button>
+            <button type="reset" class="botao">Resetar</button>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>

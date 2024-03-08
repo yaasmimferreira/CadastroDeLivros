@@ -1,0 +1,86 @@
+body{
+    background-image: url("/static/backgroud.jpg");
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.livro-card{
+    background-color: #b5ebb9e6;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 29px;
+}
+
+
+.titulo{
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px ;
+}
+
+.titulo2{
+    font-family: "Concert One", sans-serif;
+    font-style: normal;
+    font-size: 68px;
+    color: #edeace;
+}
+
+.form-group{
+        margin: 8px;
+        display: grid;
+        grid-template-columns: 1.0fr 1fr;
+        max-width: 400px;
+        label {
+            margin-top: 5px;
+            text-align: right;
+            padding-right: 10px;
+        }
+        input,select {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+}
+
+.form{
+    margin: 10px;
+    background-color:#c9edef52 ;
+}
+
+.botao{
+    height: 36px;
+    width: 144px;
+    background-color: #8ec881;
+    border: none;
+    margin: 10px;
+    border-radius: 7px;
+}
+.botao1{
+    height: 36px;
+    width: 144px;
+    background-color: #8ec881;
+    border: none;
+    margin: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.livro{
+    background-color: #baded2;
+    padding: 27px;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 10px;
+}
+
+
+
